@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Note: Ajouter une section pour le parcours scolaire-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="">
+		<meta name="author" content="">
+        <link href="styles.css" type="text/css" rel="stylesheet" media="all"/>
+        <link rel="stylesheet" href="js/slick-1.8.0/slick/slick.css"/>
+        <link rel="stylesheet" href="js/slick-1.8.0/slick/slick-theme.css"/>
+        <!--
+            Note: L'ajout de certain élément bootstrap gêne mes styles(voir titre h1)
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        -->
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="navbar-logo"><img src="./images/logo.png"></a>
+                    <ul class="nav-menu nav-default">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="header-intro">
+                <p class="text-intro">Good morning my name is dexter, i am a passion developper(presentation/intro)</p>
+                <!--Rajouter un canvas avec un effet WEBGL-->
+            </section>
+        </header>
+
+        <!--Section pour les projets scolaires, perso, pro cela pourrait être un slider-->
+        <section class="light-bg">
+            <div class="wrapper">
+                <h1>Project</h1>
+                <div><!--wrapper-->
+                    <div><!--container-->
+                        <div>
+                            <div>
+                                <p>Projet1</p>
+                            </div>
+
+                            <div>
+                                <article>Projet2</article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section de présentation des compétences-->
+        <section id="skills-style ">
+            <div class="wrapper">
+                <h1>Skills</h1>
+                <div class="grid-container">
+                    <div class="grid11">
+                        <h2 class="title-right">Langage de programmation</h2>
+                        <ul class="item1 list-group-right"></ul>
+                    </div>
+                    <div>
+                        <h2>IDE</h2>
+                        <ul class="item2"></ul>
+                    </div>
+                    <div>
+                        <h2 class="title-right">Toto</h2>
+                        <ul class="item3 list-group-right"></ul>
+                    </div>
+                    <div>
+                        <h2>Tata</h2>
+                        <ul class="item4"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section pour les hobbies-->
+        <section class="light-bg">
+            <div class="wrapper">
+                <h1>Hobbies</h1>
+            </div>
+        </section>
+
+        <!--Section contact-->
+        <section class="dark-bg">
+            <div class="wrapper">
+                <h1>Contact</h1>
+                <form>
+                    <input class="field" type="text" value="" placeholder="your name"/>
+                    <input class="field" type="text" value="" placeholder="your mail"/>
+                    <input class="field" type="text" value="" placeholder="subject"/>
+                    <input class="field" type="text" value="" placeholder="message"/>
+                    <button type="submit" class="btn-mail" >Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="text-container foot-text">
+                <p>Thème made by BENONI Dexter bla bla(copyright)</p>
+            </div>
+        </footer>
+
+        <!--Scripts:-->
+        <script src="./js/DOM-modifier.js"></script>
+    </body>
+</html>
