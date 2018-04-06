@@ -14,8 +14,7 @@
             Note: L'ajout de certain élément bootstrap gêne mes styles(voir titre h1)
             <link href="css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
         <title>Portfolio</title>
     </head>
 
@@ -41,23 +40,24 @@
         </header>
 
         <!--Section pour les projets scolaires, perso, pro cela pourrait être un slider-->
-        <section class="light-bg">
-            <div class="wrapper">
+        <section class="light-bg" id="intro" data-ride="carousel">
                 <h1>Project</h1>
-                <div><!--wrapper-->
-                    <div><!--container-->
-                        <div>
-                            <div>
-                                <p>Projet1</p>
-                            </div>
+                
+                <div class="wrapper-slider">
+                    <div class="container-slider">
+                        <div class="slider">
 
-                            <div>
-                                <article>Projet2</article>
+                            <div class="slide-center grid-wrap">
+                                <div class="grid-project"><img src="images/nxtedu.jpg" alt="lego ev3"></div>
+                                <div class="grid-project"><p>Projet1</p></div>
+                            </div>
+                            <div class="slide-center">
+                                <p>Projet2</p>
+                                <iframe width="454" height="280" src="https://www.youtube.com/embed/AJyuTT_6Zxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!--Section de présentation des compétences-->
@@ -114,5 +114,17 @@
 
         <!--Scripts:-->
         <script src="./js/DOM-modifier.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/slick-1.8.0/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                    $(".slider").slick({
+                        prevArrow:"<img class='arrowleft control-c prev slick-prev'  src='./images/templates-gallery-left-arrow.png'>",
+                        nextArrow:"<img class='arrowright control-c next slick-next' src='./images/templates-gallery-right-arrow.png'>",
+                        adaptativeHeight: true
+                    });
+            });
+        </script>
     </body>
 </html>
