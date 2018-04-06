@@ -123,6 +123,42 @@ nav{
 */
 
   /*******************************/
+ /* Section Projet              */
+/*******************************/
+.container-slider{
+    width: 100%;
+    position: relative;
+}
+
+.wrapper-slider{
+    width: 70%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.grid-wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+
+.grid-project{
+    text-align: center;
+}
+
+  /*******************************/
  /* Section Compétences         */
 /*******************************/
 
@@ -180,13 +216,6 @@ h2{
     margin-left: 800px;
 }*/
 
-
-  /*******************************/
- /* Section projet              */
-/*******************************/
-/*.projects{
-    background-color:#f8f8f8;
-}*/
 
   /*******************************/
  /* Section contact             */
@@ -270,3 +299,15 @@ h1{
     padding-bottom: 15px;
 }
 
+h1::after{
+        left: 50%;
+    z-index: 1;
+    width: 60px;
+    height: 3px;
+    content: " ";
+    bottom: -5px;
+    margin-left: -30px;
+    text-align: center;
+    position: absolute;
+    background: #D4D4D4;
+}
