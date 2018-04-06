@@ -1,3 +1,4 @@
+
 /*Gère le placement de la section intro:*/
 var tailleNavBar = getComputedStyle(document.querySelector('nav')).height//récupère la hauteur de ma bare de navigation
 var intro = document.querySelector('.header-intro');//sélectionne la class de ma <section> 'intro'
@@ -32,6 +33,4 @@ for(var i = 0; i < language.length; i++){
     liTag4.innerHTML = deskSoft[i];
     desktopSoft.appendChild(liTag4);
 }
-
-
 
